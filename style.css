@@ -1,0 +1,96 @@
+/* Tambahkan CSS ini untuk membuat tampilan overlay transparan */
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
+  display: none;
+}
+
+/* Tambahkan CSS ini untuk membuat gambar diperbesar */
+.zoom-overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    z-index: 1;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .play-pause-btn {
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .play-pause-btn.play:before {
+    content: '\25B6';
+  }
+  
+.width{
+  width: 26rem;
+}
+
+  .play-pause-btn.pause:before {
+    content: '\23F8';
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-slide-in-out {
+    animation: slide-in 0.5s ease-out, slide-out 0.5s 4.5s ease-out;
+  }
+  

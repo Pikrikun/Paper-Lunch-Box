@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Lunch Box</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+</head>
+<body>
+<div class="md:grid md:grid-flow-col md:auto-cols-auto ">
+    <div class="col-span-3 hidden md:block">
+        <div class="hidden md:block">
+            <video id="fullscreen-video" class="h-full lg:w-auto width" preload="auto" controls autoplay>
+                <source src="id_bb643511-24d9-457a-a303-c84a2989ea28_000462.12000461666167505.mp4" type="video/mp4" class="h-full ">
+            </video>
+        </div>
+    </div>
+    <div class="col-span-1">
+        <div class="hidden md:block">
+            <div class="mt-2 flex justify-center">
+                <img class="max-h-28 lg:max-h-44 zoom" src="5dd41a6edbe819a849487bb076e48e46.jpg" alt="">
+                <img class="max-h-28 lg:max-h-44 zoom" src="https://down-id.img.susercontent.com/file/dd3dc0413f2df2e6d208edfc6df4d198" alt="">
+                <img class="max-h-28 lg:max-h-44 zoom" src="https://down-id.img.susercontent.com/file/8b71ae5315dc69b5842297c13e74c32c" alt="">
+                <div class="zoom-overlay"></div>
+            </div>
+        </div>
+
+        <div class=" h-auto flex justify-center">
+            <div class="mt-2 grid grid-cols-2 gap-2 md:hidden">
+                <div class="h-44  flex items-center">
+                    <img class="h-full max-h-full  object-contain" src="5dd41a6edbe819a849487bb076e48e46.jpg" alt="">
+                </div>
+                <div class="h-44 w-full flex  items-center">
+                    <img class="h-full max-h-full object-contain" src="https://down-id.img.susercontent.com/file/dd3dc0413f2df2e6d208edfc6df4d198" alt="">
+                </div>
+                <div class="h-44 w-full col-span-2">
+                    <div class="h-full flex justify-center items-center">
+                        <img class="h-auto w-auto  max-h-full object-center" src="https://down-id.img.susercontent.com/file/8b71ae5315dc69b5842297c13e74c32c" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+        <div class="flex justify-center content-center md:mt-8 mt-4 ">
+            <div class=" mt-4 lg:mt-3 text-base font-bold mr-2">
+                <h1>10RB+ Terjual</h1>
+            </div>
+            <button id="buy-button" class=" bg-blue-500 hover:bg-blue-700 text-white rounded px-2 font-bold mr-2 lg:py-3 lg:px-3">Beli Sekarang</button>
+            <div class="grid grid-cols-3 gap-2 lg:grid-cols-5 lg:gap-1 mt-4 lg:mt-3">
+                <i class="bi bi-star-fill text-sm"></i>
+                <i class="bi bi-star-fill text-sm"></i>
+                <i class="bi bi-star-fill text-sm"></i>
+                <i class="bi bi-star-fill text-sm"></i>
+                <i class="bi bi-star-half text-sm"></i>
+            </div>
+        </div>
+    </div>
+        <div class="container  pt-6">
+            <h1 class="xl:text-2xl font-bold text-center">Varian dan Harga</h1>
+            
+            <div class="grid sm:grid-cols-3 sm:gap-3 xl:grid-cols-2 xl:gap-3 md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-2 lg:mt-3">
+              <div class="col-span-2">
+                <div id="varianList" class="flex flex-wrap mx-2">
+                  <div class="p-2 cursor-pointer bg-gray-300 m-2" onclick="showHarga(320)">
+                    <h2 class="text-sm xl:text-base font-semibold text-center">M 290 GSM</h2>
+                  </div>
+                  <div class="p-2 cursor-pointer bg-gray-300 m-2" onclick="showHarga(411)">
+                    <h2 class="text-sm xl:text-base font-semibold text-center">M 290 GSM (Design)</h2>
+                  </div>
+                  <div class="p-2 cursor-pointer bg-gray-300 m-2" onclick="showHarga(284)">
+                    <h2 class="text-sm xl:text-base font-semibold text-center">S 290 GSM</h2>
+                  </div>
+                  <div class="p-2 cursor-pointer bg-gray-300 m-2" onclick="showHarga(411)">
+                    <h2 class="text-sm xl:text-base font-semibold text-center">L 290 GSM</h2>
+                  </div>
+                  <div class="p-2 cursor-pointer bg-gray-300 m-2" onclick="showHarga(483)">
+                    <h2 class="text-sm xl:text-base font-semibold text-center">L 325 GSM</h2>
+                  </div>
+                </div>
+              </div>
+              <div id="hargaContainer2" class="col-span-3 mb-2 ml-4 text-base "></div>
+            </div>
+          </div>
+
+        <h1 class="text-base xl:text-xl font-black lg:px-10 xl:px-28 text-center capitalize xl:mt-4 pt-6 md:pt-0">Paper Lunch Box S,M,L/ Kotak makanan coklat polos/ lunch box selip</h1>
+
+        <div class=" px-6 text-sm lg:text-base">
+            <p class="whitespace-pre-line">
+                Tersedia Paper Lunch Box dengan model selip untuk memudahkan Anda membawa makanan ke kantor atau sekolah. Dengan pemesanan minimum 20 pcs, Anda bisa memilih dari 3 ukuran yang tersedia, yaitu S, M, dan L.
+                
+                Paper Lunch Box Kraft kami memiliki spesifikasi yang unggul, antara lain:
+
+                <ol class="list-decimal">
+                    <li>Tahan Microwave hingga 200 derajat celcius</li>
+                    <li>Tahan minyak</li>
+                    <li>Eco friendly</li>
+                    <li>Tersertifikasi FDA (Food and Drug Administration)</li>
+                    <li>Tersertifikasi FSC (Forest Stewardship Council)</li>
+                    <li>Tersertifikasi Halal MUI</li>
+                </ol>
+            </p>
+        </div>
+    </div>   
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
